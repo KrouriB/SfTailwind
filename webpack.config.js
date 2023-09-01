@@ -28,6 +28,7 @@ Encore
     // will require an extra script tag for runtime.js
     // but, you probably want this, unless you're building a single-page app
     .enableSingleRuntimeChunk()
+    .enablePostCssLoader()
 
     /*
      * FEATURE CONFIG
@@ -68,8 +69,6 @@ Encore
 
     // uncomment if you're having problems with a jQuery plugin
     //.autoProvidejQuery()
-
-    .enablePostCssLoader()
 ;
 
 module.exports = Encore.getWebpackConfig();
